@@ -70,7 +70,8 @@ export default function Weather() {
             <div>Day 1</div>
             <img src={weatherData.imgUrl} alt={weatherData.description} />
             <span className="day-temperature">
-              <strong>{weatherData.temperature}°</strong>{" "}
+              <strong>{weatherData.temperature}°</strong>
+              {"  "}
               {weatherData.temperature}°
             </span>
           </div>
@@ -78,7 +79,8 @@ export default function Weather() {
             <div>Day 2</div>
             <img src={weatherData.imgUrl} alt={weatherData.description} />
             <span className="day-temperature">
-              <strong>{weatherData.temperature}°</strong>{" "}
+              <strong>{weatherData.temperature}°</strong>
+              {"   "}
               {weatherData.temperature}°
             </span>
           </div>
@@ -86,7 +88,8 @@ export default function Weather() {
             <div>Day 3</div>
             <img src={weatherData.imgUrl} alt={weatherData.description} />
             <span className="day-temperature">
-              <strong>{weatherData.temperature}°</strong>{" "}
+              <strong>{weatherData.temperature}°</strong>
+              {"  "}
               {weatherData.temperature}°
             </span>
           </div>
@@ -94,7 +97,8 @@ export default function Weather() {
             <div>Day 4</div>
             <img src={weatherData.imgUrl} alt={weatherData.description} />
             <span className="day-temperature">
-              <strong>{weatherData.temperature}°</strong>{" "}
+              <strong>{weatherData.temperature}°</strong>
+              {"  "}
               {weatherData.temperature}°
             </span>
           </div>
@@ -102,7 +106,8 @@ export default function Weather() {
             <div>Day 5</div>
             <img src={weatherData.imgUrl} alt={weatherData.description} />
             <span className="day-temperature">
-              <strong>{weatherData.temperature}°</strong>{" "}
+              <strong>{weatherData.temperature}°</strong>
+              {"  "}
               {weatherData.temperature}°
             </span>
           </div>
@@ -113,10 +118,7 @@ export default function Weather() {
         <a href="https://github.com/">Stella Bullo </a>and is open-sourced on{" "}
         <a href="https://github.com/Stella5791/react-project-weather">GitHub</a>
         and hosted on{" "}
-        <a href="https://app.netlify.com/sites/stellar-lolly-265b33/overview">
-          {" "}
-          Netlify.
-        </a>
+        <a href="https://stellar-lolly-265b33.netlify.app/"> Netlify.</a>
       </footer>
     </div>
   );
