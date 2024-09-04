@@ -3,7 +3,7 @@ import "./Weather.css";
 
 export default function Weather() {
   let weatherData = {
-    city: "New York",
+    city: "Cordoba",
     temperature: 19,
     date: "Tuesday 10:00",
     description: "Cloudy",
@@ -34,7 +34,6 @@ export default function Weather() {
 
       <div className="overview ">
         <h1 className="place text-left">{weatherData.city}</h1>
-
         <div className="row">
           <div className="col-6 current-temperature">
             <div className=" d-flex temperature">
@@ -47,7 +46,6 @@ export default function Weather() {
               </div>
             </div>
           </div>
-
           <div className="col-6 pb-3">
             <p>
               <div>Last updated: {weatherData.date}</div>
@@ -63,6 +61,57 @@ export default function Weather() {
           </div>
         </div>
       </div>
+      <div>
+        <div className="row forecast mb-5">
+          <div className="title text-center mb-5 ">
+            Forecast for the next 5 days
+          </div>
+          <div className="col day">
+            <div>Day 1</div>
+            <img src={weatherData.imgUrl} alt={weatherData.description} />
+            <span className="day-temperature">
+              <strong>{weatherData.temperature}°</strong>{" "}
+              {weatherData.temperature}°
+            </span>
+          </div>
+          <div className="col day">
+            <div>Day 2</div>
+            <img src={weatherData.imgUrl} alt={weatherData.description} />
+            <span className="day-temperature">
+              <strong>{weatherData.temperature}°</strong>{" "}
+              {weatherData.temperature}°
+            </span>
+          </div>
+          <div className="col day">
+            <div>Day 3</div>
+            <img src={weatherData.imgUrl} alt={weatherData.description} />
+            <span className="day-temperature">
+              <strong>{weatherData.temperature}°</strong>{" "}
+              {weatherData.temperature}°
+            </span>
+          </div>
+          <div className="col day">
+            <div>Day 4</div>
+            <img src={weatherData.imgUrl} alt={weatherData.description} />
+            <span className="day-temperature">
+              <strong>{weatherData.temperature}°</strong>{" "}
+              {weatherData.temperature}°
+            </span>
+          </div>
+          <div className="col day">
+            <div>Day 5</div>
+            <img src={weatherData.imgUrl} alt={weatherData.description} />
+            <span className="day-temperature">
+              <strong>{weatherData.temperature}°</strong>{" "}
+              {weatherData.temperature}°
+            </span>
+          </div>
+        </div>
+      </div>
+      <footer>
+        This project was coded by Stella Bullo and is open-sourced on GitHub and
+        hosted on Netlify
+      </footer>
     </div>
   );
 }

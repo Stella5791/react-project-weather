@@ -3,22 +3,7 @@
   margin: 0 auto;
   margin-top: 20px;
   padding: 20px;
-  background: linear-gradient(
-    99.6deg,
-    rgb(112, 128, 152) 10.6%,
-    rgb(242, 227, 234) 32.9%,
-    rgb(234, 202, 213) 52.7%,
-    rgb(220, 227, 239) 72.8%,
-    rgb(185, 205, 227) 81.1%,
-    rgb(154, 180, 212) 102.4%
-  );
   border-radius: 5px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.Weather .overview {
-  border-radius: 10px;
-  padding-right: 30px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -56,33 +41,16 @@
 .Weather .temperature .units a:hover {
   text-decoration: none;
 }
-
-.Weather .weather-forecast {
-  margin-top: 10px;
+.Weather .forecast {
+  padding: 30px;
+}
+.Weather .forecast .title {
+  font-size: 20px;
 }
 
-.Weather .weather-forecast h3 {
-  font-size: 14px;
-  font-weight: 400;
+.Weather .forecast .day {
   text-align: center;
-  height: 15px;
-  line-height: 15px;
-  padding-top: 7px;
 }
-
-.Weather .weather-forecast img {
-  display: block;
-  margin: 0 auto;
-  height: 48px;
-  width: 48px;
-}
-
-.Weather .weather-forecast-temperature {
-  text-align: center;
-
-  font-size: 13px;
-  font-weight: 400;
-  height: auto;
-  line-height: 15px;
-  white-space: nowrap;
+.Weather .forecast .day-temperature {
+  font-size: 20px;
 }
