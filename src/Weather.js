@@ -108,9 +108,15 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      <footer>
-        This project was coded by Stella Bullo and is open-sourced on GitHub and
-        hosted on Netlify
+      <footer className="text-center">
+        This project was coded by{" "}
+        <a href="https://github.com/">Stella Bullo </a>and is open-sourced on{" "}
+        <a href="https://github.com/Stella5791/react-project-weather">GitHub</a>
+        and hosted on{" "}
+        <a href="https://app.netlify.com/sites/stellar-lolly-265b33/overview">
+          {" "}
+          Netlify.
+        </a>
       </footer>
     </div>
   );
